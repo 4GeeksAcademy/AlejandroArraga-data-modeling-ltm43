@@ -24,7 +24,7 @@ class Planet(Base):
     name = Column(String(250), nullable=False)
     diameter = Column(Integer)
     climate = Column(String(250))
-    terrain = Column(String(250))
+    orbital_period = Column(String(250))
     population = Column(Integer)
     # Relación con favoritos
     favorites = relationship('Favorites', back_populates='planet')
