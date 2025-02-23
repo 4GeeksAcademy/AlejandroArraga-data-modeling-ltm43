@@ -49,7 +49,7 @@ class Favorites(Base):
     planet_id = Column(Integer, ForeignKey('planet.id'), nullable=True)
     character_id = Column(Integer, ForeignKey('character.id'), nullable=True)
     
-    # Relaciones
+    # Relaciones!
     user = relationship('User', back_populates='favorites')
     planet = relationship('Planet', back_populates='favorites')
     character = relationship('Character', back_populates='favorites')
